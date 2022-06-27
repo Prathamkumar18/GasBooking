@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abhaya_libre</item>
+        <item>@font/aclonica</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/akronim</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/chango</item>
+        <item>@font/petit_formal_script</item>
+        <item>@font/snowburst_one</item>
+        <item>@font/syncopate</item>
+    </array>
+</resources>
