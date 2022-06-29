@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GasBooking">
         <activity
+            android:name=".h"
+            android:exported="false" />
+        <activity
+            android:name=".b"
+            android:exported="false" />
+        <activity
+            android:name=".Hpclass"
+            android:exported="false" />
+        <activity
+            android:name=".Bharatclass"
+            android:exported="false" />
+        <activity
+            android:name=".Hpgas"
+            android:exported="false" />
+        <activity
+            android:name=".Bharatgas"
+            android:exported="false" />
+        <activity
             android:name=".Signup"
             android:exported="false" />
         <activity

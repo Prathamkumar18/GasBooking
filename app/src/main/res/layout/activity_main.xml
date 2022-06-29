@@ -1,7 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="@drawable/bg3"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="350dp"
+        app:neumorph_backgroundColor="#0D3063"
+        android:layout_height="300dp"
+        android:id="@+id/card"
+        app:neumorph_shadowColorLight="#ABD4EA"
+        android:layout_marginTop="30dp"
+        app:neumorph_shadowColorDark="#090909"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        app:neumorph_shadowElevation="8dp"
+        app:neumorph_shapeType="flat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvidcard"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="CUSTOMER ID CARD"
+            android:textColor="#C63D58"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="22dp" />
+
+        <TextView
+            android:id="@+id/tvcardname"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/antic_didone"
+            android:textColor="#3F8746"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/cardid"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/antic_didone"
+
+            android:textColor="#3F8746"
+            />
+        <TextView
+            android:id="@+id/tvcardage"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/antic_didone"
+            android:textSize="25sp"
+            android:textColor="#3F8746"
+            />
+        <TextView
+            android:id="@+id/tvcardadd"
+            android:fontFamily="@font/antic_didone"
+
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:textColor="#3F8746"
+            />
+        <TextView
+            android:id="@+id/cardphone"
+            android:layout_width="300dp"
+            android:fontFamily="@font/antic_didone"
+
+            android:layout_height="40dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:textColor="#3F8746"
+            />
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
