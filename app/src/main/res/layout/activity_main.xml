@@ -9,13 +9,13 @@
 
     <soup.neumorphism.NeumorphCardView
         style="@style/Widget.Neumorph.CardView"
-        android:layout_width="350dp"
-        app:neumorph_backgroundColor="#0D3063"
+        android:layout_width="340dp"
         android:layout_height="300dp"
         android:id="@+id/card"
-        app:neumorph_shadowColorLight="#ABD4EA"
+        app:neumorph_backgroundColor="#130340"
+        app:neumorph_shadowColorLight="@color/white"
         android:layout_marginTop="30dp"
-        app:neumorph_shadowColorDark="#090909"
+        app:neumorph_shadowColorDark="#000000"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintLeft_toLeftOf="parent"
         android:clickable="true"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_margin="5dp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/new_rocker"
             android:gravity="center"
             android:text="CUSTOMER ID CARD"
             android:textColor="#C63D58"
@@ -39,13 +39,15 @@
             tools:layout_editor_absoluteY="22dp" />
 
         <TextView
+            android:scrollbars="horizontal"
             android:id="@+id/tvcardname"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="60dp"
-            android:fontFamily="@font/antic_didone"
-            android:textColor="#3F8746"
+            android:fontFamily="@font/vast_shadow"
+            android:text="Namefsdfsadfd"
+            android:textColor="#116197"
             android:textSize="25sp" />
         <TextView
             android:id="@+id/cardid"
@@ -54,42 +56,144 @@
             android:layout_marginTop="100dp"
             android:layout_marginLeft="10dp"
             android:textSize="25sp"
-            android:fontFamily="@font/antic_didone"
-
-            android:textColor="#3F8746"
+            android:fontFamily="@font/vast_shadow"
+            android:textColor="#116197"
             />
+
         <TextView
             android:id="@+id/tvcardage"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:layout_marginTop="140dp"
             android:layout_marginLeft="10dp"
-            android:fontFamily="@font/antic_didone"
-            android:textSize="25sp"
-            android:textColor="#3F8746"
-            />
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/vast_shadow"
+            android:textColor="#116197"
+            android:textSize="25sp" />
         <TextView
             android:id="@+id/tvcardadd"
-            android:fontFamily="@font/antic_didone"
-
+            android:fontFamily="@font/vast_shadow"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginTop="180dp"
             android:layout_marginLeft="10dp"
             android:textSize="25sp"
-            android:textColor="#3F8746"
+            android:textColor="#116197"
+            android:scrollbars="horizontal"
             />
-        <TextView
-            android:id="@+id/cardphone"
-            android:layout_width="300dp"
-            android:fontFamily="@font/antic_didone"
 
-            android:layout_height="40dp"
-            android:layout_marginTop="220dp"
-            android:layout_marginLeft="10dp"
-            android:textSize="25sp"
-            android:textColor="#3F8746"
-            />
+            <TextView
+                android:id="@+id/cardphone"
+                android:scrollbars="horizontal"
+                android:layout_width="300dp"
+                android:fontFamily="@font/vast_shadow"
+                android:layout_height="40dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:textColor="#116197"
+                />
+
     </soup.neumorphism.NeumorphCardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/c1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintHorizontal_bias="0.491"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="30dp"
+        android:outlineSpotShadowColor="#000DFF"
+        app:cardCornerRadius="50dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:elevation="10dp"
+            android:src="@drawable/bk"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            >
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:id="@+id/c2"
+               android:layout_marginTop="25dp"
+               android:clickable="true"
+               android:focusable="true"
+               android:layout_marginLeft="40dp"
+               app:layout_constraintLeft_toRightOf="@+id/c1"
+               app:layout_constraintHorizontal_bias="0.491"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/card"
+               android:layout_marginRight="30dp"
+               app:cardCornerRadius="50dp"
+               app:cardElevation="30dp"
+               android:outlineSpotShadowColor="#000DFF"
+               >
+               <ImageView
+                   android:layout_width="150dp"
+                   android:elevation="10dp"
+                   android:src="@drawable/faqq"
+                   android:layout_height="150dp"
+                   >
+               </ImageView>
+           </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:focusable="true"
+            android:elevation="10dp"
+            app:cardElevation="30dp"
+            android:outlineSpotShadowColor="#000DFF"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c1"
+            android:layout_marginLeft="20dp"
+            >
+            <ImageView
+                android:src="@drawable/faqq"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop">
+            </ImageView>
+</androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="50dp"
+            android:id="@+id/c4"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:elevation="10dp"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintLeft_toRightOf="@+id/c3"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="30dp"
+            app:cardElevation="30dp"
+            android:outlineSpotShadowColor="#000DFF"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/c2">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cont"
+                android:background="@drawable/edit_text_border"
+                android:scaleType="centerCrop"
+                >
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

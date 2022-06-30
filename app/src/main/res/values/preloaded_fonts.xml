@@ -7,14 +7,19 @@
         <item>@font/aguafina_script</item>
         <item>@font/akronim</item>
         <item>@font/alegreya_sc</item>
+        <item>@font/almendra_display</item>
         <item>@font/antic_didone</item>
         <item>@font/beth_ellen</item>
         <item>@font/ceviche_one</item>
         <item>@font/chango</item>
         <item>@font/croissant_one</item>
+        <item>@font/emilys_candy</item>
         <item>@font/gravitas_one</item>
+        <item>@font/henny_penny</item>
+        <item>@font/new_rocker</item>
         <item>@font/petit_formal_script</item>
         <item>@font/snowburst_one</item>
         <item>@font/syncopate</item>
+        <item>@font/vast_shadow</item>
     </array>
 </resources>

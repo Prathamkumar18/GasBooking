@@ -1,11 +1,11 @@
 package com.example.gasbooking
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
+import android.text.method.ScrollingMovementMethod
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import soup.neumorphism.NeumorphCardView
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
         var cardadd=findViewById<TextView>(R.id.tvcardadd)
         var cardphone=findViewById<TextView>(R.id.cardphone)
         var cardid=findViewById<TextView>(R.id.cardid)
+        cardname.movementMethod = ScrollingMovementMethod()
+
+        var card=findViewById<NeumorphCardView>(R.id.card)
+        cardphone.movementMethod = ScrollingMovementMethod()
+        cardadd.movementMethod = ScrollingMovementMethod()
+
 
         val intent = intent
         val uname = intent.extras!!.getString("u_name")
