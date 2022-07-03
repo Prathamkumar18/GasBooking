@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        tools:context=".BookActivity">
+        <ImageView
+            android:id="@+id/ivupper"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleY="1.6"
+            android:src="@drawable/ss"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/marqueeText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ivupper"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="  Current Gas Price for 14.2 KG Cylinder is Rs.920 and for 19 KG Cylinder is Rs.2200"
+            android:textSize="20sp"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="400dp"
+            android:layout_marginLeft="50dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="Gas Cylinder Weight :"
+            android:textColor="#3AA680"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marqueeText" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            android:id="@+id/rg1"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="150dp"
+                android:id="@+id/rg10"
+                android:textColor="#134275"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:text="14.2 kg"
+                android:textSize="25sp"
+                />
+            <RadioButton
+                android:layout_width="150dp"
+                android:id="@+id/rg11"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="19 kg"
+                android:textColor="#134275"
+
+                android:textSize="25sp"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/tv2"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="Accessories :"
+            android:textColor="#3AA680"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg1" />
+
+            <CheckBox
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textColor="#134275"
+                android:id="@+id/cb0"
+                app:layout_constraintTop_toBottomOf="@id/tv2"
+                android:layout_gravity="center"
+                android:text="Gas Stove   (Rs.600)"
+                android:textSize="25sp"
+                />
+        <CheckBox
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb0"
+            android:layout_width="300dp"
+            android:id="@+id/cb1"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#134275"
+
+            android:text="Gas Pipe     (Rs.350)"
+            android:textSize="25sp"
+            />
+        <CheckBox
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="300dp"
+            android:id="@+id/cb2"
+            android:layout_height="50dp"
+            android:textColor="#134275"
+            app:layout_constraintTop_toBottomOf="@id/cb1"
+            android:layout_gravity="center"
+            android:text="Lighter        (Rs.220)"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="Payment Mode :"
+            android:textColor="#3AA680"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb2" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            android:id="@+id/rg2"
+            android:orientation="horizontal"
+            >
+        <RadioButton
+            android:layout_width="150dp"
+            android:id="@+id/rg20"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:text="COD"
+            android:textColor="#134275"
+            android:textSize="25sp"
+            />
+        <RadioButton
+            android:layout_width="200dp"
+            android:id="@+id/rg21"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="UPI (booktm)"
+            android:textColor="#134275"
+            android:textSize="25sp"
+            />
+        </RadioGroup>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etupi"
+            app:layout_constraintTop_toBottomOf="@+id/rg2"
+            android:hint="  Enter your UPI Id"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColorHint="#43937C"
+            android:textColor="#124160"
+            android:background="@drawable/edit_text_border"
+            android:textSize="25sp"
+            />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/etupi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/save"
+            android:scaleX="1.1"
+            android:scaleY="1.7"
+            android:layout_marginTop="5dp"
+            android:id="@+id/save"
+            android:shadowColor="@color/black"
+            android:elevation="10dp"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#AFE1DB"
+            android:fontFamily="@font/alegreya_sc"
+            android:text="Total Amount: Rs. 0"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/save" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/op"
+            android:scaleY="1"
+            android:scaleX="1.3"
+            android:id="@+id/placeorder"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/price"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

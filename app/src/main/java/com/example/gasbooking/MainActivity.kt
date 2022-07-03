@@ -44,6 +44,12 @@ class MainActivity : AppCompatActivity() {
             cardphone.text="PHONE NO. -"+"  "+ rs.getString(3);
         }
 
+        var c1=findViewById<CardView>(R.id.c1)
+        c1.setOnClickListener {
+            var i=Intent(this,BookActivity::class.java)
+            startActivity(i)
+        }
+
         var c2=findViewById<CardView>(R.id.c2)
         c2.setOnClickListener{
             var i=Intent(this,Update::class.java)

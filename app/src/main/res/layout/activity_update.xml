@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Update">
     <ImageView
         android:id="@+id/ivupper"
@@ -104,12 +105,12 @@
     </LinearLayout>
     <ImageView
         android:layout_width="420dp"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         app:layout_constraintTop_toBottomOf="@+id/lllogin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/low"
+        android:src="@drawable/kk"
         android:scaleType="centerCrop"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
