@@ -24,17 +24,30 @@ class Signup : AppCompatActivity() {
         var etraddress = findViewById<EditText>(R.id.etraddress)
         var etrpassword = findViewById<EditText>(R.id.etrpassword)
         btnregister.setOnClickListener {
-            var cv = ContentValues()
-            cv.put("NAME", etrname.text.toString())
-            cv.put("AGE", etrage.text.toString().toInt())
-            cv.put("PHONE", etrphone.text.toString().toInt())
-            cv.put("ADDRESS", etraddress.text.toString())
-            cv.put("PASSWORD", etrpassword.text.toString())
-            db.insert("CUSTOMER", null, cv)
-            rs.requery()
-            Toast.makeText(this, "Registered Succesfully", Toast.LENGTH_SHORT).show()
-            var intent = Intent(this, Login::class.java)
-            startActivity(intent)
+            var n=etrname.text.toString()
+            var a=etrage.text.toString()
+            var p=etrphone.text.toString()
+            var add=etraddress.text.toString()
+            var pass= etrpassword.text.toString()
+            if(n == "")etrname.error="Enter Name"
+            else if(a=="") etrage.error="Enter Age"
+            else if(Integer.parseInt(a)<18) etrage.error="Age should not be <18"
+            else if(p=="") etrphone.error="Enter Phone No."
+            else if(add=="") etraddress.error="Enter Address"
+            else if(pass=="") etrpassword.error="Enter password"
+            else{
+                var cv = ContentValues()
+                cv.put("NAME",n)
+                cv.put("AGE",a.toInt())
+                cv.put("PHONE",p.toInt())
+                cv.put("ADDRESS", add)
+                cv.put("PASSWORD",pass)
+                db.insert("CUSTOMER", null, cv)
+                rs.requery()
+                Toast.makeText(this, "Registered Succesfully", Toast.LENGTH_SHORT).show()
+                var intent = Intent(this, Login::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

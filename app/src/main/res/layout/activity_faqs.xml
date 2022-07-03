@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#DFFBE4"
+    android:layout_height="match_parent"
+    tools:context=".faqs">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/fqimg"
+        android:src="@drawable/ff"
+        android:scaleX="1.5"
+        />
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/fqimg"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/ceviche_one"
+            android:text="
+1. How do I pay for cylinder booking?\n
+-> You can now pay for your Gas cylinder on this Mobile App in Book Now Section.You will also get notification on succesfull payment.\n\n
+2. Where do I find my LPG ID?\n
+-> LPG ID is used to identify customers uniquely.
+You can find your LPG ID on Customer ID Card along.\n\n
+3. When will I receive my LPG cylinder?\n
+-> Once you have paid for your LPG cylinder on this app, it takes upto 7 days for the cylinder to get delivered.\n\n
+4. How can I contact the LPG provider?\n
+-> contact no. - 95236xxxxx and 91291xxxxx\n\n
+5. What are the Payment method available?\n
+-> CashOnDelivery and UPI\n\n
+6. How to change my password?\n
+-> You can change your password on edit section. This require your LPG ID.\n\n
+7. How do we change the name of connection holder?\n
+-> Once the account has been created,you cannot modify the username section.\n\n
+8. How to delete my account?\n
+-> You can DELETE your ACCOUNT on edit section. This require your LPG ID.\n\n
+"
+            android:textColor="#041C63"
+            android:textSize="30sp" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

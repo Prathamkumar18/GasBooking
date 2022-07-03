@@ -7,7 +7,6 @@
     tools:context=".splashScreen"
     android:background="@drawable/bg3"
     >
-
     <TextView
         android:id="@+id/tvtitle"
         android:layout_width="match_parent"

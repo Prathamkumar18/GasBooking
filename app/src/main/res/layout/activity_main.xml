@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
     tools:context=".MainActivity">
 
     <soup.neumorphism.NeumorphCardView
         style="@style/Widget.Neumorph.CardView"
-        android:layout_width="340dp"
-        android:layout_height="300dp"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
         android:id="@+id/card"
-        app:neumorph_backgroundColor="#130340"
-        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowColorLight="#979191"
         android:layout_marginTop="30dp"
-        app:neumorph_shadowColorDark="#000000"
+        app:neumorph_shadowColorDark="#FFD7D7"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintLeft_toLeftOf="parent"
         android:clickable="true"
         android:focusable="true"
-        app:neumorph_shadowElevation="8dp"
+        app:neumorph_shadowElevation="10dp"
         app:neumorph_shapeType="flat"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -48,14 +47,14 @@
             android:fontFamily="@font/vast_shadow"
             android:text="Namefsdfsadfd"
             android:textColor="#116197"
-            android:textSize="25sp" />
+            android:textSize="18sp" />
         <TextView
             android:id="@+id/cardid"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="10dp"
-            android:textSize="25sp"
+            android:textSize="18sp"
             android:fontFamily="@font/vast_shadow"
             android:textColor="#116197"
             />
@@ -68,7 +67,7 @@
             android:layout_marginTop="140dp"
             android:fontFamily="@font/vast_shadow"
             android:textColor="#116197"
-            android:textSize="25sp" />
+            android:textSize="18sp" />
         <TextView
             android:id="@+id/tvcardadd"
             android:fontFamily="@font/vast_shadow"
@@ -76,7 +75,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="180dp"
             android:layout_marginLeft="10dp"
-            android:textSize="25sp"
+            android:textSize="18sp"
             android:textColor="#116197"
             android:scrollbars="horizontal"
             />
@@ -89,7 +88,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="220dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textColor="#116197"
                 />
 
@@ -105,9 +104,10 @@
         android:focusable="true"
         app:layout_constraintHorizontal_bias="0.491"
         android:layout_marginLeft="20dp"
-        app:cardElevation="30dp"
-        android:outlineSpotShadowColor="#000DFF"
-        app:cardCornerRadius="50dp">
+
+        android:outlineSpotShadowColor="#FF0000"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
         <ImageView
             android:layout_width="150dp"
             android:elevation="10dp"
@@ -130,14 +130,15 @@
                app:layout_constraintRight_toRightOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/card"
                android:layout_marginRight="30dp"
-               app:cardCornerRadius="50dp"
+               app:cardCornerRadius="30dp"
                app:cardElevation="30dp"
-               android:outlineSpotShadowColor="#000DFF"
+               android:outlineSpotShadowColor="#FF0000"
                >
                <ImageView
                    android:layout_width="150dp"
                    android:elevation="10dp"
-                   android:src="@drawable/faqq"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/update1"
                    android:layout_height="150dp"
                    >
                </ImageView>
@@ -146,14 +147,14 @@
             android:id="@+id/c3"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:cardCornerRadius="50dp"
             android:layout_marginTop="15dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             android:focusable="true"
             android:elevation="10dp"
+            app:cardCornerRadius="30dp"
             app:cardElevation="30dp"
-            android:outlineSpotShadowColor="#000DFF"
+            android:outlineSpotShadowColor="#FF0000"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/c1"
@@ -162,6 +163,7 @@
             <ImageView
                 android:src="@drawable/faqq"
                 android:layout_width="150dp"
+                android:elevation="10dp"
                 android:layout_height="150dp"
                 android:scaleType="centerCrop">
             </ImageView>
@@ -169,25 +171,24 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:cardCornerRadius="50dp"
             android:id="@+id/c4"
             android:clickable="true"
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:elevation="10dp"
             android:layout_marginLeft="40dp"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintLeft_toRightOf="@+id/c3"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginRight="30dp"
-            app:cardElevation="30dp"
-            android:outlineSpotShadowColor="#000DFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="30dp"            android:outlineSpotShadowColor="#FF0000"
             android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@+id/c2">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/cont"
+                android:elevation="10dp"
                 android:background="@drawable/edit_text_border"
                 android:scaleType="centerCrop"
                 >

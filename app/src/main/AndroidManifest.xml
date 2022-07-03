@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GasBooking">
         <activity
+            android:name=".faqs"
+            android:exported="false" />
+        <activity
+            android:name=".Update"
+            android:exported="false" />
+        <activity
             android:name=".h"
             android:exported="false" />
         <activity

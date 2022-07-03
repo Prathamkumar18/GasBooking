@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/contact1"
+        android:title="Phone"
+        />
+    <item
+        android:id="@+id/contact2"
+        android:title="Email"
+        />
+    <item
+        android:id="@+id/contact3"
+        android:title="Locate us"
+        >
+        <menu>
+            <item
+                android:id="@+id/contact31"
+                android:title="Location 1"
+                />
+            <item
+                android:id="@+id/contact32"
+                android:title="Location 2"
+                />
+        </menu>
+
+    </item>
+</menu>

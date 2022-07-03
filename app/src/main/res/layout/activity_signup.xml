@@ -58,7 +58,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:hint="   Age"
-
             android:inputType="number"
             android:drawableLeft="@drawable/ic_baseline_accessibility_24"
             android:gravity="left"
